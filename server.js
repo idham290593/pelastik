@@ -3,12 +3,9 @@ const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 
-const users = require("./routes/users");
-const news = require("./routes/news");
-const notification = require("./routes/notification.js");
-const location = require("./routes/location.js");
+
 const category = require("./routes/category.js");
-const geo = require("./routes/geo.js");
+
 
 
 
@@ -34,12 +31,7 @@ mongoose
   .connect(db, { useNewUrlParser: true, useFindAndModify: false }) // Adding new mongo url parser
   .then(() => console.log("MongoDB Connected..."))
   .catch(err => console.log(err));
-app.use("/geo", geo);
 
-app.use("/users", users);
-app.use("/news", news);
-app.use("/notification", notification);
-app.use("/location", location);
 app.use("/category", category);
 
 
