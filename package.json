@@ -10,7 +10,7 @@
   "license": "MIT",
   "dependencies": {
     "amazon-cognito-identity-js": "^3.0.9",
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.3",
     "cognito-express": "^2.0.14",
